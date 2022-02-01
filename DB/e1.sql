@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS ex1;
+CREATE DATABASE ex1  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+USE ex1;
+
+CREATE TABLE treball (
+    nom CHAR(20)       PRIMARY KEY,
+    edad SMALLINT(3),
+    carrec VARCHAR(50)     NOT NULL
+);
+ENGINE = InnoDB;
